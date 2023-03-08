@@ -1,0 +1,80 @@
+STRUCTURE PREPARATION SUMMARY
+Tue Mar  7 16:52:01 2023
+
+The issues identified are summarized below for the following system(s):
+5V02_R
+
+Summary
+=======
+
+--------------------------------------------------------------------------------
+Problems                            | Total
+--------------------------------------------------------------------------------
+Alternates.........................   0
+Termini............................   0
+HCount.............................   0
+Library............................   0
+S-S................................   0
+AName..............................   0
+UID................................   0
+Charge.............................   0
+Protonate3D........................   34
+Ligand.............................   0
+Clash..............................   0
+Cis-Amide..........................   0
+FF.................................   0
+--------------------------------------------------------------------------------
+
+Issues
+======
+
+Chain       Res UID  Type    Details 
+--------------------------------------------------------------------------------
+
+
+Protonation States
+==================
+
+Chain       Res UID  Type    Details 
+--------------------------------------------------------------------------------
+1: 5V02_R.R Ile 9    N-term          
+1: 5V02_R.R Glu 11   GLU             
+1: 5V02_R.R Lys 13   LYS             
+1: 5V02_R.R Glu 14   GLU             
+1: 5V02_R.R Ser 17   SER             
+1: 5V02_R.R Asp 20   ASP             
+1: 5V02_R.R Lys 21   LYS             
+1: 5V02_R.R Asp 22   ASP             
+1: 5V02_R.R Asp 24   ASP             
+1: 5V02_R.R Thr 26   THR             
+1: 5V02_R.R Thr 28   THR             
+1: 5V02_R.R Thr 29   THR             
+1: 5V02_R.R Lys 30   LYS             
+1: 5V02_R.R Glu 31   GLU             
+1: 5V02_R.R Thr 34   THR             
+1: 5V02_R.R Arg 37   ARG             
+1: 5V02_R.R Ser 38   SER             
+1: 5V02_R.R Gln 41   GLN             
+1: 5V02_R.R Asn 42   ASN             
+1: 5V02_R.R Thr 44   THR             
+1: 5V02_R.R Glu 45   GLU             
+1: 5V02_R.R Glu 47   GLU             
+1: 5V02_R.R Gln 49   GLN             
+1: 5V02_R.R Asp 50   ASP             
+1: 5V02_R.R Asn 53   ASN             
+1: 5V02_R.R Glu 54   GLU             
+1: 5V02_R.R Asp 56   ASP             
+1: 5V02_R.R Asp 58   ASP             
+1: 5V02_R.R Asn 60   ASN             
+1: 5V02_R.R Thr 62   THR             
+1: 5V02_R.R Asp 64   ASP             
+1: 5V02_R.R Glu 67   GLU             
+1: 5V02_R.R Thr 70   THR             
+1: 5V02_R.R Ala 73   C-term          
+
+
+Warnings
+========
+
+Chain       Res UID  Type    Details 
+--------------------------------------------------------------------------------
