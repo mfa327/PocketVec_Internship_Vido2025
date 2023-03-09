@@ -1,0 +1,50 @@
+***********************************************
+The rDock program is licensed under GNU-LGPLv3.0. http://rdock.sourceforge.net/
+Executable:	rbdock ($Id: //depot/dev/client3/rdock/2021.1/src/exe/rbdock.cxx#4 $)
+Library:	libRbt.so/2021.1/901 2021/07/19
+RBT_ROOT:	../
+RBT_HOME:	./test/RBT_HOME
+Current dir:	/aloy/home/acomajuncosa/programs/rDock-dev-2021/build
+Date:		Mon Jul 26 15:02:38 2021
+***********************************************
+
+
+Command line args:
+ -i ./test/RBT_HOME/1YET_c.sd
+ -r 1YET_test.prm
+ -p dock.prm
+ -o 1YET_test_out
+ -n 1
+ -s 48151623
+Reading polar hydrogens only from ligand SD file
+
+DOCKING PROTOCOL:
+..//data/scripts/dock.prm
+Free docking (indexed VDW)
+
+RECEPTOR:
+./test/RBT_HOME/1YET_test.prm
+R_1YET
+
+DOCKING SITE
+Total volume 2060.88 A^3
+Cavity #1	Size=16487 points; Vol=2060.88 A^3; Min=(24,-3,15.5); Max=(44,16.5,35); Center=(34.7872,6.08871,24.663); Extent=(20,19.5,19.5)
+
+
+No solvent
+
+------------- Terminate filter 0------------
+
+if (SCORE.NRUNS - 0 ) > 0 then
+	0.0 
+else
+	-1.0 
+end
+
+
+**************************************************
+RECORD #1
+NAME:   L_1YET
+RANDOM_NUMBER_SEED:           48151623
+
+END OF RUN
