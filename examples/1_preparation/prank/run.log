@@ -1,0 +1,80 @@
+[INFO] Console - rescoring pockets on proteins from dataset [fpocket3.ds]
+[INFO] RescorePocketsRoutine - outdir: examples/1_preparation/prank
+[INFO] FeatureSetup - enabledFeatures: [chem, volsite, protrusion, bfactor, atom_table]
+[INFO] Dataset - processing dataset [fpocket3.ds] using 0 threads
+[INFO] Dataset - 
+------------------------------------------------------------------------------------------------------------------------
+processing [1A42_prepared_out.pdb] (1/1)
+------------------------------------------------------------------------------------------------------------------------
+
+[INFO] Console - processing [1A42_prepared_out.pdb] (1/1)
+[INFO] Protein - loading protein [/aloy/home/acomajuncosa/PocketVec_v2/GitLab_repo/examples/1_preparation/1A42_prepared.pdb]
+[INFO] PdbUtils - loading file [examples/1_preparation/1A42_prepared.pdb]
+[INFO] Struct - groups in chain A: 256
+[INFO] Struct - groups in chain A: 256
+[INFO] Struct - 255 groups in chain A
+[INFO] Protein - structure atoms: 4019
+[INFO] Protein - protein   atoms: 1999
+[INFO] Protein - loading ligands
+[INFO] Ligands - loading 1 ligands
+[INFO] Ligand - ligand NME atoms:6
+[INFO] Ligands - loading 0 ligands
+[INFO] Ligands - Loaded 1 relevant ligands: [NME]
+[INFO] FPocketLoader - loading 16 pockets
+[INFO] FPocketLoader - ATOM lines in pocket file: 40
+[INFO] Protein - SAS points: 3603
+[INFO] FPocketLoader - ATOM lines in pocket file: 28
+[WARN] FPocketLoader - linked atom from pocket not found in protein [id:3190]
+[INFO] FPocketLoader - ATOM lines in pocket file: 16
+[INFO] FPocketLoader - ATOM lines in pocket file: 29
+[INFO] FPocketLoader - ATOM lines in pocket file: 20
+[WARN] FPocketLoader - linked atom from pocket not found in protein [id:42]
+[WARN] FPocketLoader - linked atom from pocket not found in protein [id:70]
+[INFO] FPocketLoader - ATOM lines in pocket file: 16
+[INFO] FPocketLoader - ATOM lines in pocket file: 17
+[INFO] FPocketLoader - ATOM lines in pocket file: 18
+[INFO] FPocketLoader - ATOM lines in pocket file: 20
+[INFO] FPocketLoader - ATOM lines in pocket file: 20
+[WARN] FPocketLoader - linked atom from pocket not found in protein [id:3798]
+[INFO] FPocketLoader - ATOM lines in pocket file: 15
+[WARN] FPocketLoader - linked atom from pocket not found in protein [id:1882]
+[WARN] FPocketLoader - linked atom from pocket not found in protein [id:1325]
+[INFO] FPocketLoader - ATOM lines in pocket file: 14
+[WARN] FPocketLoader - linked atom from pocket not found in protein [id:4016]
+[WARN] FPocketLoader - linked atom from pocket not found in protein [id:4014]
+[INFO] FPocketLoader - ATOM lines in pocket file: 13
+[INFO] FPocketLoader - ATOM lines in pocket file: 17
+[INFO] FPocketLoader - ATOM lines in pocket file: 20
+[WARN] FPocketLoader - linked atom from pocket not found in protein [id:864]
+[INFO] FPocketLoader - ATOM lines in pocket file: 15
+[INFO] FeatureSetup - enabledFeatures: [chem, volsite, protrusion, bfactor, atom_table]
+[INFO] Protein - exposed protein atoms: 801 of 1999
+[INFO] InstancePredictor - Creating WekaInstancePredictor
+[INFO] RescorePocketsRoutine - 
+
+Rescored pockets for [1A42_prepared_out.pdb]: 
+
+name            score           rank     old_rank   change                   
+pocket.2        30.1467         1        2          1        +               
+pocket.5        28.399          2        5          3        +++             
+pocket.1        12.6436         3        1          -2       --              
+pocket.8        9.5715          4        8          4        ++++            
+pocket.9        3.2372          5        9          4        ++++            
+pocket.11       2.7282          6        11         5        +++++           
+pocket.6        2.3902          7        6          -1       -               
+pocket.10       2.1658          8        10         2        ++              
+pocket.3        1.3809          9        3          -6       ------          
+pocket.12       1.3517          10       12         2        ++              
+pocket.4        1.0933          11       4          -7       -------         
+pocket.13       1.0688          12       13         1        +               
+pocket.15       0.9472          13       15         2        ++              
+pocket.14       0.8161          14       14         0                        
+pocket.16       0.7296          15       16         1        +               
+pocket.7        0.6167          16       7          -9       ---------       
+
+[INFO] Console - rescoring finished in 0 hours 0 minutes 4.210 seconds
+[INFO] Console - results saved to directory [/aloy/home/acomajuncosa/PocketVec_v2/GitLab_repo/examples/1_preparation/prank]
+[INFO] Console - 
+[INFO] Console - ----------------------------------------------------------------------------------------------
+[INFO] Console -  finished successfully in 0 hours 0 minutes 5.125 seconds
+[INFO] Console - ----------------------------------------------------------------------------------------------

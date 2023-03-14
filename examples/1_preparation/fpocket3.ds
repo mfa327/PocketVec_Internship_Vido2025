@@ -1,0 +1,12 @@
+# Dataset for rescoring Fpocket 3 predictions.
+    # (predictions generated with Fpocket 3.1.2 on "./clean" structures)
+    #
+    # Note: this dataset (unlike fpocket.ds) cannot be used for eval-rescore
+    # because protein column points to proteins without known ligands.
+
+    PARAM.PREDICTION_METHOD=fpocket
+
+
+    HEADER: prediction protein
+
+    1A42_prepared_out/1A42_prepared_out.pdb  1A42_prepared.pdb

@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     3:
+HEADER 0  - Pocket Score                      : 0.1625
+HEADER 1  - Drug Score                        : 0.0004
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.7224
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4436
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 14.5000
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 4.0000
+HEADER 9  - Pocket volume (Monte Carlo)       : 246.9067
+HEADER 10  -Pocket volume (convex hull)       : 8.8582
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 2.0000
+HEADER 13 - Number of apolar alpha sphere     :     3
+HEADER 14 - Proportion of apolar alpha sphere : 0.1500
+ATOM    531  OG1 THR A  34      -9.278 -10.207  37.114  0.62  9.64           O 0
+ATOM   3952    N ILE A 252     -10.008  -3.361  34.878  0.00  0.00           N 0
+ATOM   3967  CD1 ILE A 252      -9.025  -6.176  31.929  0.00  0.00           C 0
+ATOM    528    O THR A  34     -11.373  -7.792  38.271  0.57  4.29           O 0
+ATOM   3871  CD2 LEU A 247      -5.646  -5.768  33.932  0.00  0.00           C 0
+ATOM   3951  OE1 GLN A 251     -10.850  -4.383  38.301  0.72  5.36           O 0
+ATOM    486   CB ASP A  31      -8.971 -11.915  33.930  0.00  0.00           C 0
+ATOM    480    N ASP A  31      -9.672 -10.646  31.919  0.00  0.00           N 0
+ATOM    539   CA ALA A  35     -13.076  -7.415  36.203  0.00  0.00           C 0
+ATOM    485    O ASP A  31     -11.575 -10.584  34.249  0.22  2.14           O 0
+ATOM    454    O ASP A  29      -7.301  -8.825  30.260  0.56  5.36           O 0
+ATOM   3916    O ARG A 250      -5.997  -3.091  36.393  0.57  8.57           O 0
+ATOM   3958   CB ILE A 252     -10.825  -4.724  32.967  0.00  0.00           C 0
+ATOM   3947   CD GLN A 251     -10.854  -3.225  38.947  0.00  0.00           C 0
+ATOM   3948  NE2 GLN A 251     -11.029  -3.201  40.165  0.88  5.47           N 0
+ATOM   3941   CB GLN A 251      -9.228  -1.625  37.814  0.00  0.00           C 0
+TER
+END

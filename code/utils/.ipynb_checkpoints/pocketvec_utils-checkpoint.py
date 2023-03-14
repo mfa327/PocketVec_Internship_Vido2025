@@ -3,6 +3,7 @@ import scipy.stats as ss
 from tqdm import tqdm
 import pandas as pd
 import numpy as np
+from Bio.PDB import *
 import pickle
 import shutil
 import copy
@@ -278,3 +279,313 @@ def raw_fp(dict_scores, file_order):
     
     molecules = pickle.load(open(file_order, "rb"))
     return np.array([dict_scores[i] for i in molecules])
+
+
+
+def select_first_model(path_in, path_out):
+    """
+    
+    Take only the first model of a PDB file (e.g NMR structure)
+    
+    Args:
+       
+        path_in (str): Path to input file
+        path_out (str): Path to output file
+        
+    
+    """
+
+    structure = PDBParser(QUIET=True).get_structure("st", path_in)
+
+    if len(structure) > 1:
+        structure = structure[0]
+
+    io = PDBIO()
+    io.set_structure(structure)
+    io.save(path_out)
+    
+def select_chain(path_in, path_out, chain):
+    """
+    
+    Take only the specified chain
+    
+    Args:
+       
+        path_in (str): Path to input file
+        path_out (str): Path to output file
+        chain (str): Chain ID
+        
+    
+    """
+
+    structure = PDBParser(QUIET=True).get_structure("st", path_in)
+
+    class select_chain(Select):
+        def accept_residue(self, residue):
+            if residue.get_parent().id == chain:
+                return 1
+            else:
+                return 0
+
+    io = PDBIO()
+    io.set_structure(structure)
+    io.save(path_out, select_chain())
+    
+    
+def remove_ligands(path_in, path_out, ligands):
+    """
+    
+    Remove ligands from structure.
+    
+    Args:
+       
+        path_in (str): Path to input file
+        path_out (str): Path to output file
+        ligands (list/set): Ligands/residues to remove
+        
+    
+    """
+
+    structure = PDBParser(QUIET=True).get_structure("st", path_in)
+
+    class remove_ligand(Select):
+        def accept_residue(self, residue):
+            if residue.get_resname() not in ligands:
+                return 1
+            else:
+                return 0
+
+    io = PDBIO()
+    io.set_structure(structure)
+    io.save(path_out, remove_ligand())
+    
+    
+def remove_hydrogens(path_to_check_structure, path_in, path_out):
+    """
+    
+    Remove hydrogens from residues
+    
+    Args:
+       
+        path_to_check_structure (str): Path to check structure file
+        path_in (str): Path to input file
+        path_out (str): Path to output file
+        
+    
+    """
+    
+    command = " ".join(['python', path_to_check_structure, '-i', path_in, '-o', path_out, "--force_save", "--non_interactive", "rem_hydrogen", "--remove Yes"])
+    o = os.popen(command).read()
+    return o
+
+
+
+
+def select_occupancies(path_to_check_structure, path_in, path_out):
+    """
+    
+    Remove hydrogens from residues
+    
+    Args:
+       
+        path_to_check_structure (str): Path to check structure file
+        path_in (str): Path to input file
+        path_out (str): Path to output file
+        
+    
+    """
+    
+    command = " ".join(['python', path_to_check_structure, '-i', path_in, '-o', path_out, "--force_save", "--non_interactive", "altloc", "--select occupancy"])
+    o = os.popen(command).read()
+    return o
+
+
+
+
+def calculate_centroid(arr):
+    """
+    
+    Given an array of 3D points, return the corresponding centroid
+    
+    Args:
+       
+        arr (np array/list): Array with 3D points
+    
+    """
+    arr = np.array(arr)
+    length = arr.shape[0]
+    sum_x = np.sum(arr[:, 0])
+    sum_y = np.sum(arr[:, 1])
+    sum_z = np.sum(arr[:, 2])
+    return np.array([sum_x/length, sum_y/length, sum_z/length])
+
+
+
+def extract_ligand_coords(path_to_st, ligand_name, chain):
+    """
+    
+    Extract ligand coordinates.
+    
+    Args:
+       
+        path_to_st (str): Path to protein-ligand PDB file
+        ligand_name (str): Ligand name (3 letter PDB code)
+        chain (str): Ligand chain
+        
+    CAUTION: If your ligand of interest is repeated within the specified chain, this function sholud not be used.
+        
+    
+    """
+    
+    structure = PDBParser(QUIET=True).get_structure("st", path_to_st)
+    coords = np.array([i.get_coord() for i in structure.get_atoms() if i.get_parent().get_resname() == 'BZU' and i.get_parent().get_parent().id == chain])
+    return coords
+
+
+def create_pocket_centroid(centroid, outfile):
+    """
+    
+    Given a 3D coordinate, create pocket centroid (SD format)
+    
+    Args:
+       
+        centroid (3D array): 3D coordinates for pocket centroid (IMPORTANT, SD FORMAT)
+        outfile (str): Path to output
+        
+    CAUTION: Be cautious with PDB file format. Do not change the number of spaces between coordinates.
+        
+    
+    """
+
+    x, y, z = str(round(centroid[0], 3)), str(round(centroid[1], 3)), str(round(centroid[2], 3))
+    ctr = " "*(8-len(x)) + x + " "*(8-len(y)) + y + " "*(8-len(z)) + z
+    text = """HEADER\nHETATM    1   C  CTR A   1    """ + ctr + """  1.00  1.00           C\nEND"""
+    
+    # Create PDB file
+    with open(outfile.split(".sd")[0] + '.pdb', "w") as f:
+        f.write(text)
+    
+    # Change format (obabel) and remove 
+    command = 'obabel ' + outfile.split(".sd")[0] + '.pdb' + " -O " + outfile
+    os.system(command)
+    os.remove(outfile.split(".sd")[0] + '.pdb')
+    
+    
+    
+def create_fpocket_ds(pdb_code):
+    """
+    
+    Create file to rescore fpocket pockets using Prank
+    
+    Args:
+       
+        pdb_code (str): PDB code  
+    
+    
+    """    
+    
+    
+    text = """# Dataset for rescoring Fpocket 3 predictions.
+    # (predictions generated with Fpocket 3.1.2 on "./clean" structures)
+    #
+    # Note: this dataset (unlike fpocket.ds) cannot be used for eval-rescore
+    # because protein column points to proteins without known ligands.
+
+    PARAM.PREDICTION_METHOD=fpocket
+
+
+    HEADER: prediction protein
+
+    """ + pdb_code + """_prepared_out/""" + pdb_code + """_prepared_out.pdb  """ + pdb_code + """_prepared.pdb"""
+    with open("./fpocket3.ds", "w") as f:
+        f.write(text)
+        
+        
+        
+        
+def read_fpocket_scores(path_to_file):
+    
+    """
+    
+    Collect fpocket pocket scores.
+    
+    Args:
+       
+        path_to_file (str): Path to fpocket scores  
+    
+    
+    """
+    
+    file = open(path_to_file, "r").readlines()
+    
+    fpocket = {}
+    for l in file:
+        if "Pocket " in l:
+            pocket = int(l.split(":")[0].split("Pocket")[1].strip())
+            fpocket[pocket] = dict()
+        elif l != '\n':
+            l = l.split(":")
+            feature = l[0].strip()
+            value = float(l[1].strip())
+            fpocket[pocket][feature] = value
+    
+    return fpocket
+
+
+
+
+def read_fpocket_centers(path_to_file):
+    """
+    
+    Given a file path (fpocket output pockets pqr), returns it as a python dict
+    mapping fpocket pockets with their corresponding alpha sphere centers.
+    
+    Args:
+       
+        path_to_file (str): Path to fpocket scores    
+    
+    """
+
+    centers = {}
+    with open(path_to_file, "r") as f:
+        for l in f:
+            if l.startswith("ATOM"):
+                # l = l.split()
+                # numb = int(l[4])
+                # x = float(l[5])
+                # y = float(l[6])
+                # z = float(l[7])
+                numb, x, y, z = int(l[22:26].strip()), float(l[30:38].strip()), float(l[38:46].strip()), float(l[46:54].strip())
+                if numb not in centers:
+                    centers[numb] = []
+                centers[numb].append([x, y, z])
+    
+    for numb in centers:
+        centers[numb] = np.array(centers[numb])
+        
+    return centers
+
+    
+    
+def read_prank_scores(path_to_file):
+    """
+    
+    Collect prank pocket scores.
+    
+    Args:
+       
+        path_to_file (str): Path to prank scores  
+    
+    
+    """
+    
+    # Read prank results
+    prank = pd.read_csv(path_to_file)
+    prank = {i: j for i, j in zip(prank['old_rank'], prank['score'])}
+    
+    return prank
+    
+    
+
+
+    
