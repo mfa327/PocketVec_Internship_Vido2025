@@ -245,7 +245,7 @@ def rank_fp(fp_raw):
     return fp
     
 
-def read_scores(path_to_scores):
+def read_rDock_scores(path_to_scores):
     
     """
     Function to read tab-separated scores (molecule \t score)
@@ -472,14 +472,15 @@ def create_pocket_centroid(centroid, outfile):
     
     
     
-def create_fpocket_ds(pdb_code):
+def create_fpocket_ds(pdb_code, path_to_file):
     """
     
     Create file to rescore fpocket pockets using Prank
     
     Args:
        
-        pdb_code (str): PDB code  
+        pdb_code (str): PDB code
+        path_to_file (str): Path to fpocket ds file
     
     
     """    
@@ -497,7 +498,7 @@ def create_fpocket_ds(pdb_code):
     HEADER: prediction protein
 
     """ + pdb_code + """_prepared_out/""" + pdb_code + """_prepared_out.pdb  """ + pdb_code + """_prepared.pdb"""
-    with open("./fpocket3.ds", "w") as f:
+    with open(path_to_file, "w") as f:
         f.write(text)
         
         

@@ -1,0 +1,685 @@
+***********************************************
+The rDock program is licensed under GNU-LGPLv3.0. http://rdock.sourceforge.net/
+Executable:	rbdock ($Id: //depot/dev/client3/rdock/2021.1/src/exe/rbdock.cxx#4 $)
+Library:	libRbt.so/2021.1/901 2021/07/19
+RBT_ROOT:	code/utils/rDock_compiled
+RBT_HOME:	/home/acomajuncosa
+Current dir:	/aloy/home/acomajuncosa/PocketVec_v2/GitLab_repo
+Date:		Tue Mar 14 15:51:52 2023
+***********************************************
+
+
+Command line args:
+ -i data/libs/TOP_128_rDock_LLM.sdf
+ -r results/run_pocketvec/st_parameters.prm
+ -p results/run_pocketvec/dock.prm
+ -o results/run_pocketvec/results
+ -n 1
+ -s 42
+Reading polar hydrogens only from ligand SD file
+
+DOCKING PROTOCOL:
+results/run_pocketvec/dock.prm
+Free docking (indexed VDW)
+
+RECEPTOR:
+results/run_pocketvec/st_parameters.prm
+Change this if you want
+
+DOCKING SITE
+Total volume 3078.62 A^3
+Cavity #1	Size=24629 points; Vol=3078.62 A^3; Min=(-13.5,-7,2); Max=(8.5,17,26); Center=(-1.73929,7.0784,11.9332); Extent=(22,24,24)
+
+
+No solvent
+
+------------- Terminate filter 0------------
+
+if (SCORE.NRUNS - 0 ) > 0 then
+	0.0 
+else
+	-1.0 
+end
+
+
+**************************************************
+RECORD #1
+NAME:   Enamine T0505-3993
+RANDOM_NUMBER_SEED:           42
+
+**************************************************
+RECORD #2
+NAME:   Chem T&I AMSACS-17229
+RANDOM_NUMBER_SEED:           2013804367
+
+**************************************************
+RECORD #3
+NAME:   Chemical Block A3692/0156694
+RANDOM_NUMBER_SEED:           1395112319
+
+**************************************************
+RECORD #4
+NAME:   Life Chemicals F0778-0231
+RANDOM_NUMBER_SEED:           -761316088
+
+**************************************************
+RECORD #5
+NAME:   Princeton Biomolecular OSSK_459353
+RANDOM_NUMBER_SEED:           -59095782
+
+**************************************************
+RECORD #6
+NAME:   Toslab 44086
+RANDOM_NUMBER_SEED:           1476250595
+
+**************************************************
+RECORD #7
+NAME:   Specs AM-900/15051004
+RANDOM_NUMBER_SEED:           -364970049
+
+**************************************************
+RECORD #8
+NAME:   Life Chemicals F2584-0097
+RANDOM_NUMBER_SEED:           1802939487
+
+**************************************************
+RECORD #9
+NAME:   Asinex ASN 06235439
+RANDOM_NUMBER_SEED:           89557378
+
+**************************************************
+RECORD #10
+NAME:   Specs AA-504/36954121
+RANDOM_NUMBER_SEED:           -596002783
+
+**************************************************
+RECORD #11
+NAME:   Specs AP-866/42442546
+RANDOM_NUMBER_SEED:           -1327882868
+
+**************************************************
+RECORD #12
+NAME:   EMC Microcollections 009B3204
+RANDOM_NUMBER_SEED:           779980162
+
+**************************************************
+RECORD #13
+NAME:   Chembridge 9014479
+RANDOM_NUMBER_SEED:           -1894028153
+
+**************************************************
+RECORD #14
+NAME:   Chem T&I NSB 0071574
+RANDOM_NUMBER_SEED:           -848547980
+
+**************************************************
+RECORD #15
+NAME:   Chem T&I AMSACS-12929
+RANDOM_NUMBER_SEED:           131918866
+
+**************************************************
+RECORD #16
+NAME:   Life Chemicals F0396-0052
+RANDOM_NUMBER_SEED:           66778478
+
+**************************************************
+RECORD #17
+NAME:   Chem T&I AMSACS-08712
+RANDOM_NUMBER_SEED:           -1870765630
+
+**************************************************
+RECORD #18
+NAME:   Life Chemicals F0560-0107
+RANDOM_NUMBER_SEED:           -1202109105
+
+**************************************************
+RECORD #19
+NAME:   Chemdiv 8005-4355
+RANDOM_NUMBER_SEED:           -744816152
+
+**************************************************
+RECORD #20
+NAME:   InterBioScreen STOCK5S-70232
+RANDOM_NUMBER_SEED:           1260996707
+
+**************************************************
+RECORD #21
+NAME:   Chembridge 5707467
+RANDOM_NUMBER_SEED:           -1518752871
+
+**************************************************
+RECORD #22
+NAME:   Asinex ASN 04371767
+RANDOM_NUMBER_SEED:           -2092721400
+
+**************************************************
+RECORD #23
+NAME:   A-Synthese-Biotech EX-14747
+RANDOM_NUMBER_SEED:           581769520
+
+**************************************************
+RECORD #24
+NAME:   InterBioScreen STOCK3S-81928
+RANDOM_NUMBER_SEED:           -1605933453
+
+**************************************************
+RECORD #25
+NAME:   Nanosyn NS61821
+RANDOM_NUMBER_SEED:           1146134729
+
+**************************************************
+RECORD #26
+NAME:   Asinex ASN 05317597
+RANDOM_NUMBER_SEED:           286647195
+
+**************************************************
+RECORD #27
+NAME:   Chem T&I AMSACS-11579
+RANDOM_NUMBER_SEED:           -1313831553
+
+**************************************************
+RECORD #28
+NAME:   Bionet 8K-348S
+RANDOM_NUMBER_SEED:           1544169209
+
+**************************************************
+RECORD #29
+NAME:   InterBioScreen STOCK5S-22526
+RANDOM_NUMBER_SEED:           -990619592
+
+**************************************************
+RECORD #30
+NAME:   Asinex ASN 05343028
+RANDOM_NUMBER_SEED:           341640187
+
+**************************************************
+RECORD #31
+NAME:   Asinex ASN 03365236
+RANDOM_NUMBER_SEED:           -307764582
+
+**************************************************
+RECORD #32
+NAME:   Life Chemicals F0566-0293
+RANDOM_NUMBER_SEED:           1887986849
+
+**************************************************
+RECORD #33
+NAME:   EMC Microcollections 001A3586
+RANDOM_NUMBER_SEED:           -2116506187
+
+**************************************************
+RECORD #34
+NAME:   Chem T&I AMSACS-01505
+RANDOM_NUMBER_SEED:           595225725
+
+**************************************************
+RECORD #35
+NAME:   Chem T&I ARAK0118211
+RANDOM_NUMBER_SEED:           1695144292
+
+**************************************************
+RECORD #36
+NAME:   Chembridge 7634772
+RANDOM_NUMBER_SEED:           527378599
+
+**************************************************
+RECORD #37
+NAME:   Chem T&I IVK/0000805
+RANDOM_NUMBER_SEED:           29830241
+
+**************************************************
+RECORD #38
+NAME:   InterBioScreen STOCK5S-68320
+RANDOM_NUMBER_SEED:           2114707701
+
+**************************************************
+RECORD #39
+NAME:   InterBioScreen STOCK3S-83770
+RANDOM_NUMBER_SEED:           -98109343
+
+**************************************************
+RECORD #40
+NAME:   Life Chemicals F0529-0304
+RANDOM_NUMBER_SEED:           1973491160
+
+**************************************************
+RECORD #41
+NAME:   Chem T&I AMSACS-12205
+RANDOM_NUMBER_SEED:           -1115407585
+
+**************************************************
+RECORD #42
+NAME:   Nanosyn NS40942
+RANDOM_NUMBER_SEED:           162067183
+
+**************************************************
+RECORD #43
+NAME:   Comgenex CGX-3127127
+RANDOM_NUMBER_SEED:           -1390515231
+
+**************************************************
+RECORD #44
+NAME:   Pharmeks PHAR059863
+RANDOM_NUMBER_SEED:           -1302294824
+
+**************************************************
+RECORD #45
+NAME:   Lithuania 1050567
+RANDOM_NUMBER_SEED:           1513258536
+
+**************************************************
+RECORD #46
+NAME:   Chem T&I AMCLME-04601
+RANDOM_NUMBER_SEED:           -2007559941
+
+**************************************************
+RECORD #47
+NAME:   InterBioScreen STOCK4S-52524
+RANDOM_NUMBER_SEED:           1967798756
+
+**************************************************
+RECORD #48
+NAME:   Cerep CER0136666
+RANDOM_NUMBER_SEED:           2052969086
+
+**************************************************
+RECORD #49
+NAME:   Asinex BAS 02903336
+RANDOM_NUMBER_SEED:           -456223226
+
+**************************************************
+RECORD #50
+NAME:   Life Chemicals F0417-0114
+RANDOM_NUMBER_SEED:           941368037
+
+**************************************************
+RECORD #51
+NAME:   Life Chemicals F1359-1195
+RANDOM_NUMBER_SEED:           661531681
+
+**************************************************
+RECORD #52
+NAME:   Pyxis Discovery PYX 00003417
+RANDOM_NUMBER_SEED:           1778565746
+
+**************************************************
+RECORD #53
+NAME:   Asinex ASN 09961559
+RANDOM_NUMBER_SEED:           541562661
+
+**************************************************
+RECORD #54
+NAME:   Pyxis Discovery PYX 00004219
+RANDOM_NUMBER_SEED:           1999675246
+
+**************************************************
+RECORD #55
+NAME:   Asinex ASN 03271999
+RANDOM_NUMBER_SEED:           -1622558088
+
+**************************************************
+RECORD #56
+NAME:   InterBioScreen STOCK4S-65808
+RANDOM_NUMBER_SEED:           972334287
+
+**************************************************
+RECORD #57
+NAME:   Life Chemicals F0579-0521
+RANDOM_NUMBER_SEED:           -31945561
+
+**************************************************
+RECORD #58
+NAME:   Chem T&I UZI/1102918
+RANDOM_NUMBER_SEED:           -1003998354
+
+**************************************************
+RECORD #59
+NAME:   Asinex ASN 06916822
+RANDOM_NUMBER_SEED:           576444442
+
+**************************************************
+RECORD #60
+NAME:   Asinex ASN 04361294
+RANDOM_NUMBER_SEED:           -192385678
+
+**************************************************
+RECORD #61
+NAME:   Tripos 1557-10610
+RANDOM_NUMBER_SEED:           1049710151
+
+**************************************************
+RECORD #62
+NAME:   Maybridge ML 00307
+RANDOM_NUMBER_SEED:           157918489
+
+**************************************************
+RECORD #63
+NAME:   Bionet 10X-0864
+RANDOM_NUMBER_SEED:           -1072343868
+
+**************************************************
+RECORD #64
+NAME:   Tripos 1526-22023
+RANDOM_NUMBER_SEED:           1811255984
+
+**************************************************
+RECORD #65
+NAME:   InterBioScreen STOCK5S-13559
+RANDOM_NUMBER_SEED:           -162651138
+
+**************************************************
+RECORD #66
+NAME:   Otava 0120630218
+RANDOM_NUMBER_SEED:           1360564960
+
+**************************************************
+RECORD #67
+NAME:   Asinex ASN 02617640
+RANDOM_NUMBER_SEED:           -1202175999
+
+**************************************************
+RECORD #68
+NAME:   Chem T&I AMSACS-08601
+RANDOM_NUMBER_SEED:           1284959094
+
+**************************************************
+RECORD #69
+NAME:   Tripos 1557-13590
+RANDOM_NUMBER_SEED:           1417494187
+
+**************************************************
+RECORD #70
+NAME:   EMC Microcollections 013A0485
+RANDOM_NUMBER_SEED:           1686148053
+
+**************************************************
+RECORD #71
+NAME:   Asinex ASN 06601079
+RANDOM_NUMBER_SEED:           447668218
+
+**************************************************
+RECORD #72
+NAME:   Cerep CER0116166
+RANDOM_NUMBER_SEED:           -1947490910
+
+**************************************************
+RECORD #73
+NAME:   Tripos 1554-07659
+RANDOM_NUMBER_SEED:           743713944
+
+**************************************************
+RECORD #74
+NAME:   Princeton Biomolecular OSSK_115610
+RANDOM_NUMBER_SEED:           531107800
+
+**************************************************
+RECORD #75
+NAME:   Pyxis Discovery PYX 00000172
+RANDOM_NUMBER_SEED:           -228080409
+
+**************************************************
+RECORD #76
+NAME:   Chem T&I IVK/0000448
+RANDOM_NUMBER_SEED:           639084437
+
+**************************************************
+RECORD #77
+NAME:   Life Chemicals F0577-0037
+RANDOM_NUMBER_SEED:           -810814080
+
+**************************************************
+RECORD #78
+NAME:   Life Chemicals F0642-0697
+RANDOM_NUMBER_SEED:           820920395
+
+**************************************************
+RECORD #79
+NAME:   Chem T&I AMSACS-26179
+RANDOM_NUMBER_SEED:           1104058724
+
+**************************************************
+RECORD #80
+NAME:   Tripos 1527-02989
+RANDOM_NUMBER_SEED:           79593301
+
+**************************************************
+RECORD #81
+NAME:   Enamine T0503-9700
+RANDOM_NUMBER_SEED:           -1068599231
+
+**************************************************
+RECORD #82
+NAME:   Tripos 1513-09513
+RANDOM_NUMBER_SEED:           1543275442
+
+**************************************************
+RECORD #83
+NAME:   Chembridge 7916788
+RANDOM_NUMBER_SEED:           -502376764
+
+**************************************************
+RECORD #84
+NAME:   Asinex ASN 03798095
+RANDOM_NUMBER_SEED:           -805564176
+
+**************************************************
+RECORD #85
+NAME:   Life Chemicals F1895-0070
+RANDOM_NUMBER_SEED:           -1438438890
+
+**************************************************
+RECORD #86
+NAME:   Asinex BAS 05101595
+RANDOM_NUMBER_SEED:           176130974
+
+**************************************************
+RECORD #87
+NAME:   InterBioScreen STOCK4S-15128
+RANDOM_NUMBER_SEED:           1038244982
+
+**************************************************
+RECORD #88
+NAME:   Asinex ASN 05588575
+RANDOM_NUMBER_SEED:           855773595
+
+**************************************************
+RECORD #89
+NAME:   Biofocus 170_4347_0164
+RANDOM_NUMBER_SEED:           -1271924903
+
+**************************************************
+RECORD #90
+NAME:   InterBioScreen STOCK5S-06824
+RANDOM_NUMBER_SEED:           -678251973
+
+**************************************************
+RECORD #91
+NAME:   Biofocus 119_0552_0135
+RANDOM_NUMBER_SEED:           109014492
+
+**************************************************
+RECORD #92
+NAME:   Cerep CER0099275
+RANDOM_NUMBER_SEED:           -2141565728
+
+**************************************************
+RECORD #93
+NAME:   Chemical Block A3816/0161993
+RANDOM_NUMBER_SEED:           -1512201620
+
+**************************************************
+RECORD #94
+NAME:   Biofocus 170_0148_0349
+RANDOM_NUMBER_SEED:           -246459256
+
+**************************************************
+RECORD #95
+NAME:   Life Chemicals F0631-0161
+RANDOM_NUMBER_SEED:           550563219
+
+**************************************************
+RECORD #96
+NAME:   Chembridge 9001855
+RANDOM_NUMBER_SEED:           1619562661
+
+**************************************************
+RECORD #97
+NAME:   Maybridge HTS 07015
+RANDOM_NUMBER_SEED:           1398351478
+
+**************************************************
+RECORD #98
+NAME:   Tripos 1554-03007
+RANDOM_NUMBER_SEED:           1281633046
+
+**************************************************
+RECORD #99
+NAME:   Asinex ASN 06116813
+RANDOM_NUMBER_SEED:           -914217623
+
+**************************************************
+RECORD #100
+NAME:   Tripos 1559-05871
+RANDOM_NUMBER_SEED:           1342888612
+
+**************************************************
+RECORD #101
+NAME:   Specs AN-648/40682295
+RANDOM_NUMBER_SEED:           -1819611329
+
+**************************************************
+RECORD #102
+NAME:   ASDI 150016433
+RANDOM_NUMBER_SEED:           -188577094
+
+**************************************************
+RECORD #103
+NAME:   Tripos 1557-01752
+RANDOM_NUMBER_SEED:           -2139181462
+
+**************************************************
+RECORD #104
+NAME:   Tripos 1518-06794
+RANDOM_NUMBER_SEED:           2140021393
+
+**************************************************
+RECORD #105
+NAME:   InterBioScreen STOCK5S-48304
+RANDOM_NUMBER_SEED:           738908389
+
+**************************************************
+RECORD #106
+NAME:   Chem T&I PMOS-0027433
+RANDOM_NUMBER_SEED:           1109660974
+
+**************************************************
+RECORD #107
+NAME:   Lithuania 1067744
+RANDOM_NUMBER_SEED:           1439433610
+
+**************************************************
+RECORD #108
+NAME:   Maybridge HTS 06299
+RANDOM_NUMBER_SEED:           361715174
+
+**************************************************
+RECORD #109
+NAME:   InterBioScreen STOCK5S-05837
+RANDOM_NUMBER_SEED:           -2007414437
+
+**************************************************
+RECORD #110
+NAME:   Life Chemicals F1608-0478
+RANDOM_NUMBER_SEED:           -692842649
+
+**************************************************
+RECORD #111
+NAME:   Chemdiv 1416-0529
+RANDOM_NUMBER_SEED:           1522107758
+
+**************************************************
+RECORD #112
+NAME:   Chemical Block A3577/0151844
+RANDOM_NUMBER_SEED:           -174543855
+
+**************************************************
+RECORD #113
+NAME:   Comgenex CGX-0740668
+RANDOM_NUMBER_SEED:           1346364374
+
+**************************************************
+RECORD #114
+NAME:   Asinex ASN 06745065
+RANDOM_NUMBER_SEED:           1642221670
+
+**************************************************
+RECORD #115
+NAME:   Life Chemicals F0497-0082
+RANDOM_NUMBER_SEED:           -698575808
+
+**************************************************
+RECORD #116
+NAME:   InnovaPharm STT-00192300
+RANDOM_NUMBER_SEED:           -1663521156
+
+**************************************************
+RECORD #117
+NAME:   Tripos 1534-05651
+RANDOM_NUMBER_SEED:           1291738438
+
+**************************************************
+RECORD #118
+NAME:   Chembridge 5859646
+RANDOM_NUMBER_SEED:           -730396083
+
+**************************************************
+RECORD #119
+NAME:   Specs AK-968/37053096
+RANDOM_NUMBER_SEED:           2103724354
+
+**************************************************
+RECORD #120
+NAME:   InterBioScreen STOCK3S-07953
+RANDOM_NUMBER_SEED:           -16305429
+
+**************************************************
+RECORD #121
+NAME:   Maybridge RJF 01152
+RANDOM_NUMBER_SEED:           1994393834
+
+**************************************************
+RECORD #122
+NAME:   Tripos 1518-03381
+RANDOM_NUMBER_SEED:           -1973116880
+
+**************************************************
+RECORD #123
+NAME:   Specs AG-205/07903010
+RANDOM_NUMBER_SEED:           -210273144
+
+**************************************************
+RECORD #124
+NAME:   Asinex ASN 04479736
+RANDOM_NUMBER_SEED:           -248202072
+
+**************************************************
+RECORD #125
+NAME:   Asinex ASN 05110337
+RANDOM_NUMBER_SEED:           -1280759304
+
+**************************************************
+RECORD #126
+NAME:   Chem T&I AMCLME-05084
+RANDOM_NUMBER_SEED:           303045557
+
+**************************************************
+RECORD #127
+NAME:   Bionet 10W-0283
+RANDOM_NUMBER_SEED:           -166294255
+
+**************************************************
+RECORD #128
+NAME:   ASDI 100018405
+RANDOM_NUMBER_SEED:           1911829722
+
+END OF RUN
