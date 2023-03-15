@@ -43,7 +43,7 @@ def run_pocketvec(receptor, pocket_centroid, outpath, lib, n_runs, radius, seed)
     path_to_log = os.path.join(outpath, 'cavity_log.log')
     path_to_cavity = os.path.join(outpath, 'cavity.grd')
     path_to_rbcavity = 'rbcavity'
-    #create_cavity(outpath, path_to_log, path_to_cavity, path_to_rbcavity)
+    create_cavity(outpath, path_to_log, path_to_cavity, path_to_rbcavity)
 
 
 
@@ -58,7 +58,7 @@ def run_pocketvec(receptor, pocket_centroid, outpath, lib, n_runs, radius, seed)
 
 
     # 5. Run rDock
-    #run_rDock(outpath, lib, nruns=n_runs, seed=seed)
+    run_rDock(outpath, lib, nruns=n_runs, seed=seed)
 
 
 
@@ -89,6 +89,13 @@ def run_pocketvec(receptor, pocket_centroid, outpath, lib, n_runs, radius, seed)
 
     # Dump PocketVec descriptor in pickle format
     pickle.dump(rank, open(os.path.join(outpath, "PocketVec_fp.pkl"), "wb"))
+
+
+
+    print("\n\n")
+    print("###########################################")
+    print("#######    PIPELINE COMPLETED !!  #########")
+    print("###########################################\n")
 
 
 
