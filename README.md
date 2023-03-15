@@ -13,3 +13,35 @@ The **PocketVec Repository** holds the code needed to create a PocketVec descrip
 * `data`: sets of small molecules to dock. (?)
 * `examples`: 
 * `results`: results...
+
+
+
+# Installation
+
+1. Clone this repository to your local PocketVec folder:
+        
+        cd ~ && mkdir -p pocketvec && cd pocketvec
+        git clone https://gitlabsbnb.irbbarcelona.org/acomajuncosa/pocketvec.git
+
+2. Create a conda environment with all the requirements:
+
+        conda env create --name pocketvec_env --file=environment.yml
+        conda activate pocketvec_env
+
+
+# Running PocketVec
+
+
+
+# Speed
+
+
+
+# Basic usage
+
+
+
+# External dependencies
+
+
+# Citation
