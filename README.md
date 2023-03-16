@@ -1,6 +1,8 @@
 # PocketVec
 
-![alt text](https://gitlabsbnb.irbbarcelona.org/acomajuncosa/pocketvec/blob/master/data/png_images/PocketVec.png?raw=true)
+<p align="center">
+    <img src="https://gitlabsbnb.irbbarcelona.org/acomajuncosa/pocketvec/blob/master/data/png_images/PocketVec.png?raw=true?raw=true" width="600" alt="PocketVec illustration">
+</p>
 
 Pocket descriptors characterize protein binding sites in the shape of numerical vectors, which enable the high-throughput exploration of the pocket space.
 
