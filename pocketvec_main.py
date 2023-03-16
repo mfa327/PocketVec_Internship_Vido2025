@@ -15,7 +15,7 @@ import os
 
 
 
-def run_pocketvec(receptor, pocket_centroid, outpath, lib, n_runs, radius, seed):
+def run_pocketvec(receptor, pocket_centroid, outpath, lib, n_runs, radius, seed, rDock):
 
 
     print("###########################################")
@@ -29,7 +29,7 @@ def run_pocketvec(receptor, pocket_centroid, outpath, lib, n_runs, radius, seed)
 
 
     # 2. Set environmental variables
-    path_to_rDock = "code/utils/rDock_compiled/"
+    path_to_rDock = rDock
     environmental_variables(path_to_rDock)
 
 
@@ -115,6 +115,7 @@ def get_parser():
     parser.add_argument('-lib','--lib', required=False, type=str, default='data/libs/TOP_128_rDock_LLM.sdf', nargs='?', help='Path to compound library to dock (default data/libs/TOP_128_rDock_LLM.sdf)')
     parser.add_argument('-nr','--n_runs', required=False, type=str, default='25', nargs='?', help='Number of rDock docking runs (default 25)')
     parser.add_argument('-radius','--radius', required=False, type=str, default='12', nargs='?', help='Cavity radius (default 12 A)')
+    parser.add_argument('-rDock','--rDock', required=False, type=str, default='code/utils/rDock_compiled/', nargs='?', help='Path to rDock local installation directory (default code/utils/rDock_compiled/)')
     parser.add_argument('-s','--seed', required=False, type=str, default='42', nargs='?', help='Seed (default 42)')
 
 

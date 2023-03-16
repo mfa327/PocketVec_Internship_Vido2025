@@ -23,7 +23,7 @@ The **PocketVec Repository** holds the code needed to create a PocketVec descrip
         cd ~ && mkdir -p pocketvec && cd pocketvec
         git clone https://gitlabsbnb.irbbarcelona.org/acomajuncosa/pocketvec.git
 
-2. Create a conda environment with all the requirements:
+2. Create and activate a conda environment with all the requirements:
 
         conda env create --name pocketvec_env --file=environment.yml
         conda activate pocketvec_env
@@ -31,34 +31,52 @@ The **PocketVec Repository** holds the code needed to create a PocketVec descrip
 
 # Running PocketVec
 
-Once the 'pocketvec_env' conda environment has been activated (previous section), running PocketVec is as simple as:
+Once the /pocketvec_env/ conda environment has been activated, running PocketVec is as simple as:
 
         python pocketvec_main.py --receptor <PATH_TO_RECEPTOR> --pocket_centroid <PATH_TO_POCKET_CENTROID> --output <PATH_TO_OUTPUT>
 
-* `<PATH_TO_RECEPTOR>`: Path to protein receptor. Should be in MOL2 format and ready for docking. E.g. `./run_pocketvec/1A42_prepared.mol2`
-* `<PATH_TO_POCKET_CENTROID>`: Path to pocket centroid. We typically represent it as a single C atom with 3D cordinates in a SD file. E.g. `./run_pocketvec/CTR_LIG.sd`
-* `<PATH_TO_OUTPUT>`: Output path. All files generated along the PocketVec descriptor calculation will be left here. E.g. `./run_pocketvec`
+* `<PATH_TO_RECEPTOR>`: Path to protein receptor. Should be in MOL2 format and ready for docking. 
+        Example: `./run_pocketvec/1A42_prepared.mol2`
+* `<PATH_TO_POCKET_CENTROID>`: Path to pocket centroid. We typically represent it as a single C atom with 3D cordinates in a SD file. 
+        Example: `./run_pocketvec/CTR_LIG.sd`
+* `<PATH_TO_OUTPUT>`: Output path. All files generated along the PocketVec descriptor calculation will be left here. 
+        Example: `./run_pocketvec`
 
-Optional parameters such as the number of docking runs or the radius of the defined cavity can be additionally specified. To check all options:
-
+Optional parameters such as the number of docking runs (--n_runs) and the radius of defined cavities (--radius) can also be specified. To check all available options:
 
         python pocketvec_main.py --help
 
 # Speed
 
-PocketVec is built upon inverse virtual screening, which means that its computational cost is mainly due to docking calculations.
+PocketVec is built upon inverse virtual screening -its computational cost is mainly due to docking calculations. ...
 
 
 
 # Basic usage
 
+To further illustrate typical scenarions involving PocketVec descriptors, we have prepared 3 Jupyter Notebooks exemplifyng these situations.
+
+1. Protein and pocket centroid preparation:
+
+2. Running PocketVec step by step:
+
+3. Looking for pockets having similar PocketVec descriptors to a given pocket query: 
 
 
 # External dependencies
 
-PocketVec exercises rely 
+The generation of PocketVec descriptors relies on ...
+
+* [rDock](https://rdock.sourceforge.net/): Docking calculations. We provide a pre-compiled version of rDock in `code/utils/rDock_compiled/`, but this may not suite most of the machines. If this is your case, please consider installing it from [scratch](https://rdock.sourceforge.net/installation/) and changing the --rDock parameter when running PocketVec.
+* [BioBB Structure Checking](https://pypi.org/project/biobb-structure-checking/): Protein preparation.
+* [MOE](https://www.chemcomp.com/): Protein preparation.
+* [OpenBabel](https://github.com/openbabel/openbabel): Protein and Pocket preparation. 
+* [Fpocket](https://github.com/Discngine/fpocket): Pocket detection and scoring.
+* [P2rank](https://github.com/rdk/p2rank): Pocket detection and scoring.
 
 
 # Citation
 
 [REF]
+
+[PyPI](https://pypi.org/project/chemicalchecker/#history)
