@@ -1,6 +1,6 @@
 # PocketVec
 
-Photo here.
+![alt text](http://gitlabsbnb.irbbarcelona.org/acomajuncosa/pocketvec/master/data/png_images/PocketVec.png "Molecule Signaturization")
 
 Pocket descriptors characterize protein binding sites in the shape of numerical vectors, which enable the high-throughput exploration of the pocket space.
 
@@ -11,7 +11,7 @@ The **PocketVec Repository** holds the code needed to create a PocketVec descrip
 
 * `code`: funcions, scripts and notebooks to generate PocketVec descriptors. 
 * `data`: sets of small molecules to dock. (?)
-* `examples`: example exercises. Check section * `Basic usage` for further details. 
+* `examples`: example exercises. Check section `Basic usage` for further details. 
 * `results`: PocketVec paper results.
 
 
