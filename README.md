@@ -1,8 +1,8 @@
 # PocketVec
 
-![](./data/png_images/PocketVec.png)
-
 Pocket descriptors characterize protein binding sites in the shape of numerical vectors, which enable the high-throughput exploration of the pocket space.
+
+![](./data/png_images/PocketVec.png)
 
 **PocketVec** is a novel strategy to generate protein binding site descriptors based on the assumption that similar pockets bind similar ligands. The approach is built upon inverse virtual screening: the prioritization of a predefined set of small molecules is expected to be more correlated between a pair of similar pockets than between a pair of dissimilar ones. In short, each pocket is represented by the set of numerical ranks provided by small molecules in the docking calculations. Further conceptual and methodological details are best described in the original PocketVec publication: REF. 
 
