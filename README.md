@@ -9,10 +9,10 @@ Pocket descriptors characterize protein binding sites in the shape of numerical 
 
 The **PocketVec Repository** holds the code needed to create a PocketVec descriptor for any protein binding site of interest together with all results presented along the manuscript. The directory structure is specified as follows:
 
-* `code`: funcions, scripts and notebook to generate PocketVec descriptors. 
+* `code`: funcions, scripts and notebooks to generate PocketVec descriptors. 
 * `data`: sets of small molecules to dock. (?)
-* `examples`: 
-* `results`: results...
+* `examples`: example exercises. Check section * `Basic usage` for further details. 
+* `results`: PocketVec paper results.
 
 
 
