@@ -37,7 +37,7 @@ Once the /pocketvec_env/ conda environment has been activated, running PocketVec
 
 * `<PATH_TO_RECEPTOR>`: Path to protein receptor. Should be in MOL2 format and ready for docking. 
         Example: `./run_pocketvec/1A42_prepared.mol2`
-* `<PATH_TO_POCKET_CENTROID>`: Path to pocket centroid. We typically represent it as a single C atom with 3D cordinates in a SD file. 
+* `<PATH_TO_POCKET_CENTROID>`: Path to pocket centroid. We typically represent it as a single C atom with 3D cordinates (pocket centroid) in a SD file. 
         Example: `./run_pocketvec/CTR_LIG.sd`
 * `<PATH_TO_OUTPUT>`: Output path. All files generated along the PocketVec descriptor calculation will be left here. 
         Example: `./run_pocketvec`
@@ -48,24 +48,23 @@ Optional parameters such as the number of docking runs (--n_runs) and the radius
 
 # Speed
 
-PocketVec is built upon inverse virtual screening -its computational cost is mainly due to docking calculations. ...
-
+PocketVec is built upon inverse virtual screening -its computational cost is mainly due to docking calculations. The number of rDock runs is thus the primary factor that determines the speed of PocketVec characterization. With 25 (default) docking runs for 128 lead-like molecules, the PocketVec pipeline should not exceed 1 hour of computing time in a single CPU. 
 
 
 # Basic usage
 
-To further illustrate typical scenarions involving PocketVec descriptors, we have prepared 3 Jupyter Notebooks exemplifyng these situations.
+We have prepared 3 Jupyter Notebooks to further illustrate and exemplify typical scenarions involving PocketVec descriptors.
 
-1. Protein and pocket centroid preparation:
+1. Protein and pocket centroid preparation: Given a PDB code (and chain), the notebook shows how to download, process and prepare the receptor structure for docking calculations. In addition, we show how to specify pocket centroids using bound ligands and pocket detection algorithms.
 
-2. Running PocketVec step by step:
+2. Running PocketVec step by step: Given a prepared receptor structure (MOL2) and a pocket centroid (SD), rDock calculations are performed to build PocketVec descriptors (np.array stored in a pickle file). 
 
-3. Looking for pockets having similar PocketVec descriptors to a given pocket query: 
+3. Looking for pockets having similar PocketVec descriptors to a given pocket query: Given a PocketVec descriptor (np.array stored in a pickle file), we show how to perform pairwise comparisons with all pockets characterized in the Human Proteome.
 
 
 # External dependencies
 
-The generation of PocketVec descriptors relies on ...
+The complete generation of PocketVec descriptors relies on external software specifically designed for certain tasks.
 
 * [rDock](https://rdock.sourceforge.net/): Docking calculations. We provide a pre-compiled version of rDock in `code/utils/rDock_compiled/`, but this may not suite most of the machines. If this is your case, please consider installing it from [scratch](https://rdock.sourceforge.net/installation/) and changing the --rDock parameter when running PocketVec.
 * [BioBB Structure Checking](https://pypi.org/project/biobb-structure-checking/): Protein preparation.
