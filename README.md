@@ -31,7 +31,7 @@ The **PocketVec Repository** holds the code needed to create a PocketVec descrip
 
 # Running PocketVec
 
-Once the /pocketvec_env/ conda environment has been activated, running PocketVec is as simple as:
+Once the _pocketvec_env_ conda environment has been activated, running PocketVec is as simple as:
 
         python pocketvec_main.py --receptor <PATH_TO_RECEPTOR> --pocket_centroid <PATH_TO_POCKET_CENTROID> --output <PATH_TO_OUTPUT>
 

@@ -30,7 +30,7 @@ def prepare_pdb(infile, outfile, logfile, moebatch = "/aloy/home/acomajuncosa/pr
     """
     
     # Paths to moe functions
-    moefunct = "code/utils/moefunctions.svl"
+    moefunct = "/aloy/home/acomajuncosa/PocketVec_v2/GitLab_repo/code/utils/moefunctions.svl"
     
     # Prepare structures 
     command = moebatch + " -load " + moefunct + " -exec \"proteinprep['" + infile + "','" + outfile + "','" + logfile + "']\""
