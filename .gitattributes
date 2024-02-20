@@ -77,6 +77,7 @@
 *.xlsx filter=lfs diff=lfs merge=lfs -text
 *.eps filter=lfs diff=lfs merge=lfs -text
 *.tsv# filter=lfs diff=lfs merge=lfs -text
+*.git-id filter=lfs diff=lfs merge=lfs -text
 *.md !text -filter -merge -diff
 * filter=lfs diff=lfs merge=lfs -text
 * !text !filter !merge !diff
