@@ -4,13 +4,13 @@ Pocket descriptors characterize protein binding sites in the shape of numerical 
 
 ![](./data/png_images/PocketVec.png)
 
-**PocketVec** is a novel strategy to generate protein binding site descriptors based on the assumption that similar pockets bind similar ligands. The approach is built upon inverse virtual screening (docking): the prioritization of a predefined set of small molecules is expected to be more correlated between a pair of similar pockets than between a pair of dissimilar ones. In short, each pocket is represented by the set of numerical ranks provided by small molecules in docking calculations. Further conceptual and methodological details are best described in the original PocketVec publication: REF. 
+**PocketVec** is a novel strategy to generate protein binding site descriptors based on the assumption that similar pockets bind similar ligands. The approach is built upon inverse virtual screening (docking): the prioritization of a predefined set of small molecules is expected to be more correlated between a pair of similar pockets than between a pair of dissimilar ones. In short, each pocket is represented by the set of numerical ranks provided by small molecules in docking calculations. Further conceptual and methodological details are best described in the original PocketVec publication: [REF]. 
 
 
 The **PocketVec Repository** holds the code needed to create a PocketVec descriptor for any protein binding site of interest together with all results presented along the manuscript. The directory structure is specified as follows:
 
 * `code`: funcions, scripts and notebooks to generate PocketVec descriptors. 
-* `data`: sets of small molecules to dock. (?)
+* `data`: sets of small molecules to dock.
 * `examples`: example exercises. Check section `Basic usage` for further details. 
 * `results`: PocketVec paper results.
 
@@ -53,7 +53,7 @@ PocketVec is built upon inverse virtual screening -its computational cost is mai
 
 # Basic usage
 
-We have prepared 3 Jupyter Notebooks to further illustrate and exemplify typical scenarions involving PocketVec descriptors.
+We have prepared 3 Jupyter Notebooks to further illustrate and exemplify typical scenarios involving PocketVec descriptors.
 
 1. Protein and pocket centroid preparation: Given a PDB code (and chain), the notebook shows how to download, process and prepare the receptor structure for docking calculations. In addition, we show how to specify pocket centroids using bound ligands and pocket detection algorithms.
 
@@ -78,4 +78,4 @@ The complete generation of PocketVec descriptors relies on external software spe
 
 [REF]
 
-[PyPI](https://pypi.org/project/chemicalchecker/#history)
+<!-- [PyPI](https://pypi.org/project/chemicalchecker/#history)  -->
