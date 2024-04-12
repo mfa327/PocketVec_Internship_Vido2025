@@ -33,7 +33,7 @@ The **PocketVec Repository** holds the code needed to create a PocketVec descrip
 
 Once the _pocketvec_env_ conda environment has been activated, running PocketVec is as simple as:
 
-        python pocketvec_main.py --receptor <PATH_TO_RECEPTOR> --pocket_centroid <PATH_TO_POCKET_CENTROID> --output <PATH_TO_OUTPUT>
+        python pocketvec_main.py --receptor <PATH_TO_RECEPTOR> --pocket_centroid <PATH_TO_POCKET_CENTROID> --outpath <PATH_TO_OUTPUT>
 
 * `<PATH_TO_RECEPTOR>`: Path to protein receptor. Should be in MOL2 format and ready for docking. 
         Example: `./run_pocketvec/1A42_prepared.mol2`
