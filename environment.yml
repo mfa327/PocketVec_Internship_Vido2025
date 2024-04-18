@@ -72,8 +72,8 @@ dependencies:
     - beautifulsoup4==4.11.2
     - bel-resources==0.0.3
     - bio==1.5.6
-    - biobb-structure-checking==3.12.1
-    - biopython==1.79
+    - biobb-structure-checking==3.13.2
+    - biopython==1.80
     - bioregistry==0.6.96
     - biothings-client==0.2.6
     - bleach==6.0.0
