@@ -1,0 +1,91 @@
+ProSPECCTs Dataset	Method	AUROC
+P1	FuzCav	0.94
+P1	FuzCav (PDB)	0.94
+P1	KRIPO	0.91
+P1	SiteAlign	0.97
+P1	TIFP	0.66
+P1	TIFP (PDB)	0.55
+P1	DeeplyTough	0.95
+P1	BindSiteS-CNN	0.94
+P1.2	FuzCav	0.99
+P1.2	FuzCav (PDB)	0.99
+P1.2	KRIPO	1.0
+P1.2	SiteAlign	1.0
+P1.2	TIFP	0.9
+P1.2	TIFP (PDB)	0.74
+P1.2	DeeplyTough	0.98
+P1.2	BindSiteS-CNN	0.98
+P2	FuzCav	0.99
+P2	FuzCav (PDB)	0.98
+P2	KRIPO	0.96
+P2	SiteAlign	1.0
+P2	TIFP	0.91
+P2	TIFP (PDB)	0.78
+P2	DeeplyTough	0.9
+P2	BindSiteS-CNN	0.83
+P3	FuzCav	0.69
+P3	FuzCav (PDB)	0.69
+P3	KRIPO	0.6
+P3	SiteAlign	0.85
+P3	TIFP	0.66
+P3	TIFP (PDB)	0.56
+P3	DeeplyTough	0.76
+P3	BindSiteS-CNN	0.91
+P4	FuzCav	0.58
+P4	FuzCav (PDB)	0.58
+P4	KRIPO	0.61
+P4	SiteAlign	0.8
+P4	TIFP	0.66
+P4	TIFP (PDB)	0.57
+P4	DeeplyTough	0.75
+P4	BindSiteS-CNN	0.79
+P5	FuzCav	0.55
+P5	FuzCav (PDB)	0.56
+P5	KRIPO	0.76
+P5	SiteAlign	0.59
+P5	TIFP	0.71
+P5	TIFP (PDB)	0.54
+P5	DeeplyTough	0.67
+P5	BindSiteS-CNN	0.64
+P5.2	FuzCav	0.54
+P5.2	FuzCav (PDB)	0.54
+P5.2	KRIPO	0.77
+P5.2	SiteAlign	0.57
+P5.2	TIFP	0.63
+P5.2	TIFP (PDB)	0.53
+P5.2	DeeplyTough	0.63
+P5.2	BindSiteS-CNN	0.66
+P7	FuzCav	0.77
+P7	FuzCav (PDB)	0.77
+P7	KRIPO	0.85
+P7	SiteAlign	0.87
+P7	TIFP	0.71
+P7	TIFP (PDB)	0.66
+P7	DeeplyTough	0.83
+P7	BindSiteS-CNN	0.78
+Av	FuzCav	0.76
+Av	FuzCav (PDB)	0.76
+Av	KRIPO	0.81
+Av	SiteAlign	0.83
+Av	TIFP	0.73
+Av	TIFP (PDB)	0.62
+Av	DeeplyTough	0.81
+Av	BindSiteS-CNN	0.82
+W.Av	FuzCav	0.86
+W.Av	FuzCav (PDB)	0.86
+W.Av	KRIPO	0.86
+W.Av	SiteAlign	0.92
+W.Av	TIFP	0.75
+W.Av	TIFP (PDB)	0.64
+W.Av	DeeplyTough	0.87
+W.Av	BindSiteS-CNN	0.85
+P1	PocketVec	0.97
+P1.2	PocketVec	1.0
+P2	PocketVec	0.96
+P3	PocketVec	0.67
+P4	PocketVec	0.72
+P5	PocketVec	0.64
+P5.2	PocketVec	0.62
+P7	PocketVec	0.87
+Av	PocketVec	0.8
+W.Av	PocketVec	0.89

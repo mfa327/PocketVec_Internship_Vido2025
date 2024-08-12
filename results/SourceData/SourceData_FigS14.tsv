@@ -1,0 +1,241 @@
+ProSPECCTs Dataset	Strategy	Compound library _ # of cpds	Docking strategy	AUROC	ProSPECCTs Dataset SIZE (# of pairs)
+P1	Cavbase	-	-	0.98	106276
+P1	FuzCav	-	-	0.94	106276
+P1	FuzCav (PDB)	-	-	0.94	106276
+P1	grim	-	-	0.69	106276
+P1	grim (PDB)	-	-	0.62	106276
+P1	IsoMIF	-	-	0.77	106276
+P1	KRIPO	-	-	0.91	106276
+P1	PocketMatch	-	-	0.82	106276
+P1	ProBis	-	-	1.0	106276
+P1	RAPMAD	-	-	0.85	106276
+P1	shaper	-	-	0.96	106276
+P1	shaper (PDB)	-	-	0.96	106276
+P1	VolSite/shaper	-	-	0.93	106276
+P1	Volsite/shaper (PDB)	-	-	0.94	106276
+P1	SiteAlign	-	-	0.97	106276
+P1	SiteEngine	-	-	0.96	106276
+P1	SiteHopper	-	-	0.98	106276
+P1	SMAP	-	-	1.0	106276
+P1	TIFP	-	-	0.66	106276
+P1	TIFP (PDB)	-	-	0.55	106276
+P1	TM-align	-	-	1.0	106276
+P1	DeeplyTough	-	-	0.95	106276
+P1	BindSiteS-CNN	-	-	0.94	106276
+P1	PocketVec	LLM_128	rDock	0.9663	106276
+P1.2	Cavbase	-	-	0.91	2025
+P1.2	FuzCav	-	-	0.99	2025
+P1.2	FuzCav (PDB)	-	-	0.99	2025
+P1.2	grim	-	-	0.97	2025
+P1.2	grim (PDB)	-	-	0.83	2025
+P1.2	IsoMIF	-	-	0.97	2025
+P1.2	KRIPO	-	-	1.0	2025
+P1.2	PocketMatch	-	-	0.98	2025
+P1.2	ProBis	-	-	1.0	2025
+P1.2	RAPMAD	-	-	0.83	2025
+P1.2	shaper	-	-	0.93	2025
+P1.2	shaper (PDB)	-	-	0.93	2025
+P1.2	VolSite/shaper	-	-	0.99	2025
+P1.2	Volsite/shaper (PDB)	-	-	1.0	2025
+P1.2	SiteAlign	-	-	1.0	2025
+P1.2	SiteEngine	-	-	1.0	2025
+P1.2	SiteHopper	-	-	0.94	2025
+P1.2	SMAP	-	-	1.0	2025
+P1.2	TIFP	-	-	0.9	2025
+P1.2	TIFP (PDB)	-	-	0.74	2025
+P1.2	TM-align	-	-	1.0	2025
+P1.2	DeeplyTough	-	-	0.98	2025
+P1.2	BindSiteS-CNN	-	-	0.98	2025
+P1.2	PocketVec	LLM_128	rDock	0.9978	2025
+P2	Cavbase	-	-	0.87	108241
+P2	FuzCav	-	-	0.99	108241
+P2	FuzCav (PDB)	-	-	0.98	108241
+P2	grim	-	-	0.92	108241
+P2	grim (PDB)	-	-	0.85	108241
+P2	IsoMIF	-	-	0.7	108241
+P2	KRIPO	-	-	0.96	108241
+P2	PocketMatch	-	-	0.96	108241
+P2	ProBis	-	-	1.0	108241
+P2	RAPMAD	-	-	0.82	108241
+P2	shaper	-	-	0.93	108241
+P2	shaper (PDB)	-	-	0.93	108241
+P2	VolSite/shaper	-	-	0.78	108241
+P2	Volsite/shaper (PDB)	-	-	0.76	108241
+P2	SiteAlign	-	-	1.0	108241
+P2	SiteEngine	-	-	1.0	108241
+P2	SiteHopper	-	-	1.0	108241
+P2	SMAP	-	-	1.0	108241
+P2	TIFP	-	-	0.91	108241
+P2	TIFP (PDB)	-	-	0.78	108241
+P2	TM-align	-	-	1.0	108241
+P2	DeeplyTough	-	-	0.9	108241
+P2	BindSiteS-CNN	-	-	0.83	108241
+P2	PocketVec	LLM_128	rDock	0.959	108241
+P3	Cavbase	-	-	0.65	26860
+P3	FuzCav	-	-	0.69	26860
+P3	FuzCav (PDB)	-	-	0.69	26860
+P3	grim	-	-	0.55	26860
+P3	grim (PDB)	-	-	0.57	26860
+P3	IsoMIF	-	-	0.59	26860
+P3	KRIPO	-	-	0.6	26860
+P3	PocketMatch	-	-	0.59	26860
+P3	ProBis	-	-	0.47	26860
+P3	RAPMAD	-	-	0.61	26860
+P3	shaper	-	-	0.71	26860
+P3	shaper (PDB)	-	-	0.71	26860
+P3	VolSite/shaper	-	-	0.68	26860
+P3	Volsite/shaper (PDB)	-	-	0.68	26860
+P3	SiteAlign	-	-	0.85	26860
+P3	SiteEngine	-	-	0.82	26860
+P3	SiteHopper	-	-	0.75	26860
+P3	SMAP	-	-	0.76	26860
+P3	TIFP	-	-	0.66	26860
+P3	TIFP (PDB)	-	-	0.56	26860
+P3	TM-align	-	-	0.49	26860
+P3	DeeplyTough	-	-	0.76	26860
+P3	BindSiteS-CNN	-	-	0.91	26860
+P3	PocketVec	LLM_128	rDock	0.6708	26860
+P4	Cavbase	-	-	0.64	26860
+P4	FuzCav	-	-	0.58	26860
+P4	FuzCav (PDB)	-	-	0.58	26860
+P4	grim	-	-	0.56	26860
+P4	grim (PDB)	-	-	0.56	26860
+P4	IsoMIF	-	-	0.59	26860
+P4	KRIPO	-	-	0.61	26860
+P4	PocketMatch	-	-	0.57	26860
+P4	ProBis	-	-	0.46	26860
+P4	RAPMAD	-	-	0.63	26860
+P4	shaper	-	-	0.76	26860
+P4	shaper (PDB)	-	-	0.76	26860
+P4	VolSite/shaper	-	-	0.76	26860
+P4	Volsite/shaper (PDB)	-	-	0.76	26860
+P4	SiteAlign	-	-	0.8	26860
+P4	SiteEngine	-	-	0.79	26860
+P4	SiteHopper	-	-	0.75	26860
+P4	SMAP	-	-	0.65	26860
+P4	TIFP	-	-	0.66	26860
+P4	TIFP (PDB)	-	-	0.57	26860
+P4	TM-align	-	-	0.49	26860
+P4	DeeplyTough	-	-	0.75	26860
+P4	BindSiteS-CNN	-	-	0.79	26860
+P4	PocketVec	LLM_128	rDock	0.7193	26860
+P5	Cavbase	-	-	0.6	6400
+P5	FuzCav	-	-	0.55	6400
+P5	FuzCav (PDB)	-	-	0.56	6400
+P5	grim	-	-	0.69	6400
+P5	grim (PDB)	-	-	0.61	6400
+P5	IsoMIF	-	-	0.75	6400
+P5	KRIPO	-	-	0.76	6400
+P5	PocketMatch	-	-	0.66	6400
+P5	ProBis	-	-	0.54	6400
+P5	RAPMAD	-	-	0.55	6400
+P5	shaper	-	-	0.65	6400
+P5	shaper (PDB)	-	-	0.66	6400
+P5	VolSite/shaper	-	-	0.56	6400
+P5	Volsite/shaper (PDB)	-	-	0.57	6400
+P5	SiteAlign	-	-	0.59	6400
+P5	SiteEngine	-	-	0.64	6400
+P5	SiteHopper	-	-	0.72	6400
+P5	SMAP	-	-	0.62	6400
+P5	TIFP	-	-	0.71	6400
+P5	TIFP (PDB)	-	-	0.54	6400
+P5	TM-align	-	-	0.66	6400
+P5	DeeplyTough	-	-	0.67	6400
+P5	BindSiteS-CNN	-	-	0.64	6400
+P5	PocketVec	LLM_128	rDock	0.6363	6400
+P5.2	Cavbase	-	-	0.57	10000
+P5.2	FuzCav	-	-	0.54	10000
+P5.2	FuzCav (PDB)	-	-	0.54	10000
+P5.2	grim	-	-	0.61	10000
+P5.2	grim (PDB)	-	-	0.58	10000
+P5.2	IsoMIF	-	-	0.81	10000
+P5.2	KRIPO	-	-	0.77	10000
+P5.2	PocketMatch	-	-	0.6	10000
+P5.2	ProBis	-	-	0.55	10000
+P5.2	RAPMAD	-	-	0.52	10000
+P5.2	shaper	-	-	0.65	10000
+P5.2	shaper (PDB)	-	-	0.64	10000
+P5.2	VolSite/shaper	-	-	0.58	10000
+P5.2	Volsite/shaper (PDB)	-	-	0.56	10000
+P5.2	SiteAlign	-	-	0.57	10000
+P5.2	SiteEngine	-	-	0.57	10000
+P5.2	SiteHopper	-	-	0.81	10000
+P5.2	SMAP	-	-	0.54	10000
+P5.2	TIFP	-	-	0.63	10000
+P5.2	TIFP (PDB)	-	-	0.53	10000
+P5.2	TM-align	-	-	0.62	10000
+P5.2	DeeplyTough	-	-	0.63	10000
+P5.2	BindSiteS-CNN	-	-	0.66	10000
+P5.2	PocketVec	LLM_128	rDock	0.6157	10000
+P7	Cavbase	-	-	0.82	56399
+P7	FuzCav	-	-	0.77	56399
+P7	FuzCav (PDB)	-	-	0.77	56399
+P7	grim	-	-	0.7	56399
+P7	grim (PDB)	-	-	0.64	56399
+P7	IsoMIF	-	-	0.87	56399
+P7	KRIPO	-	-	0.85	56399
+P7	PocketMatch	-	-	0.82	56399
+P7	ProBis	-	-	0.85	56399
+P7	RAPMAD	-	-	0.74	56399
+P7	shaper	-	-	0.75	56399
+P7	shaper (PDB)	-	-	0.75	56399
+P7	VolSite/shaper	-	-	0.77	56399
+P7	Volsite/shaper (PDB)	-	-	0.72	56399
+P7	SiteAlign	-	-	0.87	56399
+P7	SiteEngine	-	-	0.86	56399
+P7	SiteHopper	-	-	0.77	56399
+P7	SMAP	-	-	0.86	56399
+P7	TIFP	-	-	0.71	56399
+P7	TIFP (PDB)	-	-	0.66	56399
+P7	TM-align	-	-	0.88	56399
+P7	DeeplyTough	-	-	0.83	56399
+P7	BindSiteS-CNN	-	-	0.78	56399
+P7	PocketVec	LLM_128	rDock	0.8705	56399
+Av	Cavbase	-	-	0.755	-
+Av	FuzCav	-	-	0.75625	-
+Av	FuzCav (PDB)	-	-	0.75625	-
+Av	grim	-	-	0.7112499999999999	-
+Av	grim (PDB)	-	-	0.6575	-
+Av	IsoMIF	-	-	0.7562500000000001	-
+Av	KRIPO	-	-	0.8075000000000001	-
+Av	PocketMatch	-	-	0.75	-
+Av	ProBis	-	-	0.7337499999999999	-
+Av	RAPMAD	-	-	0.6937500000000001	-
+Av	shaper	-	-	0.7925	-
+Av	shaper (PDB)	-	-	0.7925	-
+Av	VolSite/shaper	-	-	0.75625	-
+Av	Volsite/shaper (PDB)	-	-	0.74875	-
+Av	SiteAlign	-	-	0.83125	-
+Av	SiteEngine	-	-	0.8300000000000001	-
+Av	SiteHopper	-	-	0.84	-
+Av	SMAP	-	-	0.80375	-
+Av	TIFP	-	-	0.73	-
+Av	TIFP (PDB)	-	-	0.61625	-
+Av	TM-align	-	-	0.7675000000000001	-
+Av	DeeplyTough	-	-	0.80875	-
+Av	BindSiteS-CNN	-	-	0.81625	-
+Av	PocketVec	LLM_128	rDock	0.8044625000000001	-
+W.Av	Cavbase	-	-	0.8470781581118226	-
+W.Av	FuzCav	-	-	0.8614275886795641	-
+W.Av	FuzCav (PDB)	-	-	0.8584589912581142	-
+W.Av	grim	-	-	0.7423936559387396	-
+W.Av	grim (PDB)	-	-	0.6871310933041063	-
+W.Av	IsoMIF	-	-	0.7381410303123934	-
+W.Av	KRIPO	-	-	0.8618037899965313	-
+W.Av	PocketMatch	-	-	0.8181371826001789	-
+W.Av	ProBis	-	-	0.8698655632671741	-
+W.Av	RAPMAD	-	-	0.7711008537840209	-
+W.Av	shaper	-	-	0.8657812750502099	-
+W.Av	shaper (PDB)	-	-	0.8656763374443613	-
+W.Av	VolSite/shaper	-	-	0.8067341959593193	-
+W.Av	Volsite/shaper (PDB)	-	-	0.794964394087349	-
+W.Av	SiteAlign	-	-	0.9217481730654314	-
+W.Av	SiteEngine	-	-	0.9148072791719256	-
+W.Av	SiteHopper	-	-	0.9057287479486156	-
+W.Av	SMAP	-	-	0.9102921637842832	-
+W.Av	TIFP	-	-	0.7485737521898439	-
+W.Av	TIFP (PDB)	-	-	0.6433532811948895	-
+W.Av	TM-align	-	-	0.8829914213507218	-
+W.Av	DeeplyTough	-	-	0.8695869539236463	-
+W.Av	BindSiteS-CNN	-	-	0.8513739247539067	-
+W.Av	PocketVec	LLM_128	rDock	0.8895820227306515	-

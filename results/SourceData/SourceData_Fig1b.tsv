@@ -1,0 +1,25 @@
+ProSPECCTs Dataset	Docking software	Library of compounds	Number of compounds	AUROC
+P1	rDock	LLM	10	0.835
+P1	rDock	LLM	128	0.966
+P1	rDock	LLM	1000	0.977
+P1.2	rDock	LLM	10	0.959
+P1.2	rDock	LLM	128	0.998
+P1.2	rDock	LLM	1000	0.998
+P2	rDock	LLM	10	0.825
+P2	rDock	LLM	128	0.959
+P2	rDock	LLM	1000	0.965
+P3	rDock	LLM	10	0.614
+P3	rDock	LLM	128	0.671
+P3	rDock	LLM	1000	0.683
+P4	rDock	LLM	10	0.656
+P4	rDock	LLM	128	0.719
+P4	rDock	LLM	1000	0.727
+P5	rDock	LLM	10	0.602
+P5	rDock	LLM	128	0.636
+P5	rDock	LLM	1000	0.689
+P5.2	rDock	LLM	10	0.595
+P5.2	rDock	LLM	128	0.616
+P5.2	rDock	LLM	1000	0.632
+P7	rDock	LLM	10	0.719
+P7	rDock	LLM	128	0.871
+P7	rDock	LLM	1000	0.867
