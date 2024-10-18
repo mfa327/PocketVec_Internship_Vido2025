@@ -6,8 +6,7 @@ Pocket descriptors characterize protein binding sites in the shape of numerical 
 
 **PocketVec** is a novel strategy to generate protein binding site descriptors based on the assumption that similar pockets bind similar ligands. The approach is built upon inverse virtual screening (docking): the prioritization of a predefined set of small molecules is expected to be more correlated between a pair of similar pockets than between a pair of dissimilar ones. In short, each pocket is represented by the set of numerical ranks provided by small molecules in docking calculations. Further conceptual and methodological details are best described in the original PocketVec publication: 
 
-_Comajuncosa-Creus, A., Jorba, G., Barril, X., & Aloy, P. (2024). Comprehensive detection and characterization of human druggable pockets through binding site descriptors. Nature Communications, 15(1), 7917.. _
-
+Comajuncosa-Creus, A., Jorba, G., Barril, X., & Aloy, P. (2024). Comprehensive detection and characterization of human druggable pockets through binding site descriptors. Nature Communications, 15(1), 7917..
 
 The **PocketVec Repository** holds the code needed to create a PocketVec descriptor for any protein binding site of interest together with all results presented along the manuscript. The directory structure is specified as follows:
 
