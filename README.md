@@ -76,6 +76,6 @@ The complete generation of PocketVec descriptors relies on external software spe
 
 # Citation
 
-[REF]
+Comajuncosa-Creus, A., Jorba, G., Barril, X., & Aloy, P. (2024). Comprehensive detection and characterization of human druggable pockets through binding site descriptors. Nature Communications, 15(1), 7917.
 
 <!-- [PyPI](https://pypi.org/project/chemicalchecker/#history)  -->

@@ -1,7 +1,13 @@
 1) Human_Proteome_Uniprot.tsv ==> Uniprot entries, organism_id:9606 and reviewed:true
 2) Uniprot_to_Pfam.tsv ==> For each Uniprot entry, number and id of Pfam domains
-3) PDB-LIG.tsv ==> For each domain (uniprot + pfam + sequence region), reference structure (PDB), resolution, # of structures, # of pockets, # of aligned ligands, # of aligned ligands per pocket
-4) PDB-PD.tsv ==> For each domain (uniprot + pfam + sequence region), reference structure (PDB), fpocket druggability score, prank rescore, buriedness
-5) AF2-LIG.tsv ==> For each domain (uniprot + pfam + sequence region), centroid used to define the pocket (from PDB-LIG), buriedness, min pLDDT
-6) AF2-PD.tsv ==> For each domain (uniprot + pfam + sequence region), fpocket pocket, fpocket druggability score, prank rescore, buriedness, min pLDDT
+
+3) PDB-LIG_domain.tsv ==> For each domain (uniprot + pfam + sequence region), reference structure (PDB), resolution, # of structures, # of pockets, # of aligned ligands, # of aligned ligands per pocket
+4) PDB-PD_domain.tsv ==> For each domain (uniprot + pfam + sequence region), reference structure (PDB), fpocket druggability score, prank rescore, buriedness
+5) AF2-LIG_domain.tsv ==> For each domain (uniprot + pfam + sequence region), centroid used to define the pocket (from PDB-LIG), buriedness, min pLDDT
+6) AF2-PD_domain.tsv ==> For each domain (uniprot + pfam + sequence region), fpocket pocket, fpocket druggability score, prank rescore, buriedness, min pLDDT
 7) PocketVec descriptors ==> Directory including 4 pickle files with all PocketVec descriptors (4 strategies: PDB-LIG, PDB-PD, AF2-LIG, AF2-PD, only descriptors having < 80 outlier molecules are included)
+
+8) PDB-LIG_pocket.tsv ==> For each pocket located in a domain (uniprot + pfam + sequence region) using a reference PDB structure, centroid coordinates (x, y, z).
+8) PDB-PD_pocket.tsv ==> For each pocket located in a domain (uniprot + pfam + sequence region) using a reference PDB structure, centroid coordinates (x, y, z), fpocket druggability score, prank rescore, buriedness.
+8) AF2-LIG_pocket.tsv ==> For each pocket located in a domain (uniprot + pfam + sequence region), centroid coordinates (x, y, z), buriedness and min pLDDT.
+8) AF2-PD_pocket.tsv ==> For each pocket located in a domain (uniprot + pfam + sequence region), centroid coordinates (x, y, z), fpocket druggability score, prank rescore, buriedness and min pLDDT.
